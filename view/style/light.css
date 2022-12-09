@@ -1,0 +1,14 @@
+:root {
+    --background: rgb(240, 240, 240);
+    --color: rgb(32, 32, 32);
+    --warn-color: rgb(128, 32, 32);
+}
+
+body {
+    background: var(--background);
+    color: var(--color);
+}
+
+.icon {
+    fill: var(--color);
+}

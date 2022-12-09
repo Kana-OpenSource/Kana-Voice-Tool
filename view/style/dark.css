@@ -1,0 +1,18 @@
+:root {
+    --background: #101010;
+    --background: linear-gradient(0deg,
+            hsl(231deg 52% 13%) 0%,
+            hsl(231deg 27% 10%) 50%,
+            hsl(0deg 0% 6%) 100%) fixed;
+    --color: rgb(240, 240, 240);
+    --warn-color: rgb(255, 128, 128);
+}
+
+body {
+    background: var(--background);
+    color: var(--color);
+}
+
+.icon {
+    fill: var(--color);
+}
