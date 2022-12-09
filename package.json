@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/Kana-OpenSource/Kana-Voice-Tool#readme",
   "devDependencies": {
-    "@electron-forge/cli": "^6.0.4",
     "electron": "^22.0.0",
     "eslint": "^8.28.0"
   }
