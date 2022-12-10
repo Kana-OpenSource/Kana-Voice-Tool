@@ -1,6 +1,25 @@
 require("dotenv").config();
 module.exports = {
-    packagerConfig: {},
+    packagerConfig: {
+        icon: "./assets/icon",
+        asar: true,
+        ignore: [
+            "./src",
+            "./node_modules",
+            "./.git",
+            "./.gitignore",
+            "./.vscode",
+            "./.env",
+            "./README.md",
+            "./LICENSE",
+            "./forge.config.js",
+            "./package.json",
+            "./package-lock.json",
+            "./.eslintrc.json",
+            "./assets",
+            "./out"
+        ]
+    },
     rebuildConfig: {},
     makers: [
         {
@@ -12,7 +31,7 @@ module.exports = {
         },
         {
             name: "@electron-forge/maker-zip",
-            platforms: ["all"],
+            platforms: ["darwin", "win32", "win64", "linux"],
         },
         {
             name: "@electron-forge/maker-deb",
