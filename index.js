@@ -1,5 +1,6 @@
 const { app, BrowserWindow, shell } = require("electron");
 const path = require("node:path");
+require("update-electron-app")();
 
 function createWindow() {
     const main = new BrowserWindow({

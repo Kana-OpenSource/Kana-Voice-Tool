@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Kanaの音声合成ツール",
   "private": true,
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -22,13 +22,15 @@
   "devDependencies": {
     "@electron-forge/cli": "^6.0.4",
     "@electron-forge/maker-deb": "^6.0.4",
-    "@electron-forge/maker-rpm": "^6.0.4",
     "@electron-forge/maker-squirrel": "^6.0.4",
     "@electron-forge/maker-zip": "^6.0.4",
     "electron": "^22.0.0",
     "eslint": "^8.28.0"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "@electron-forge/maker-snap": "^6.0.4",
+    "@electron-forge/publisher-github": "^6.0.4",
+    "electron-squirrel-startup": "^1.0.0",
+    "update-electron-app": "^2.0.1"
   }
 }
