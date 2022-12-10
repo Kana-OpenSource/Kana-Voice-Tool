@@ -1,3 +1,4 @@
+require("dotenv").config();
 module.exports = {
     packagerConfig: {},
     rebuildConfig: {},
@@ -42,7 +43,8 @@ module.exports = {
                     owner: "Kana-OpenSource",
                     name: "Kana-Voice-Tool"
                 },
-                prerelease: true
+                prerelease: true,
+                authToken: process.env.GITHUB_TOKEN
             }
         }
     ]
