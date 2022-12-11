@@ -31,28 +31,24 @@ module.exports = {
         },
         {
             name: "@electron-forge/maker-zip",
-            platforms: ["darwin", "win32", "win64", "linux"],
+            platforms: ["darwin", "win32", "linux"],
         },
         {
             name: "@electron-forge/maker-deb",
-            config: {
-                options: {
-                    maintainer: "Renorari",
-                    homepage: "https://kana.renorari.net/apps/"
-                }
-            },
+            config: {},
+        },
+        {
+            name: "@electron-forge/maker-rpm",
+            config: {}
         },
         {
             name: "@electron-forge/maker-snap",
-            config: {
-                features: {
-                    audio: true,
-                    mpris: true,
-                    webgl: true
-                },
-                summary: "Kanaの音声合成ツール"
-            }
+            config: {}
         },
+        {
+            name: "@electron-forge/maker-flatpak",
+            config: {}
+        }
     ],
     publishers: [
         {
