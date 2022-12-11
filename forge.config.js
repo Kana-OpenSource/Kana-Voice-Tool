@@ -1,7 +1,7 @@
 require("dotenv").config();
 module.exports = {
     packagerConfig: {
-        icon: "./assets/icon",
+        icon: "./assets/icon.png",
         asar: true,
         ignore: [
             "./src",
@@ -13,10 +13,7 @@ module.exports = {
             "./README.md",
             "./LICENSE",
             "./forge.config.js",
-            "./package.json",
-            "./package-lock.json",
             "./.eslintrc.json",
-            "./assets",
             "./out"
         ]
     },
@@ -41,14 +38,14 @@ module.exports = {
             name: "@electron-forge/maker-rpm",
             config: {}
         },
-        {
+        /*{
             name: "@electron-forge/maker-flatpak",
             config: {}
         },
         {
             name: "@davidwinter/electron-forge-maker-snap",
             config: {}
-        }
+        }*/
     ],
     publishers: [
         {
