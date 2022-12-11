@@ -42,11 +42,11 @@ module.exports = {
             config: {}
         },
         {
-            name: "@electron-forge/maker-snap",
+            name: "@electron-forge/maker-flatpak",
             config: {}
         },
         {
-            name: "@electron-forge/maker-flatpak",
+            name: "@davidwinter/electron-forge-maker-snap",
             config: {}
         }
     ],
