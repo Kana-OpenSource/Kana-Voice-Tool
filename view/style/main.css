@@ -185,6 +185,7 @@ icon-button:disabled {
     border-radius: 8px;
     font-size: 1em;
     background: var(--input-background);
+    color: var(--color);
 }
 
 #userid:focus,
@@ -216,6 +217,7 @@ icon-button:disabled {
     border-radius: 8px;
     font-size: 1em;
     background: var(--input-background);
+    color: var(--color);
 }
 
 #voiceid:hover {
@@ -300,6 +302,7 @@ icon-button:disabled {
     border-radius: 8px;
     font-size: 1em;
     background: var(--input-background);
+    color: var(--color);
 }
 
 #text:hover {
