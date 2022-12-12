@@ -1,9 +1,17 @@
 require("dotenv").config();
 module.exports = {
     packagerConfig: {
-        icon: "./assets/icon.png",
-        asar: true,
-        ignore: [
+        "name": "Kana Voice Tool",
+        "executableName": "KanaVoiceTool",
+        "win32metadata": {
+            "CompanyName": "Renorari",
+            "FileDescription": "Kanaの音声合成ツール",
+            "OriginalFilename": "KanaVoiceTool.exe",
+            "ProductName": "Kana Voice Tool",
+            "InternalName": "KanaVoiceTool"
+        },
+        "asar": true,
+        "ignore": [
             "./src",
             "./node_modules",
             "./.git",
@@ -15,7 +23,8 @@ module.exports = {
             "./forge.config.js",
             "./.eslintrc.json",
             "./out"
-        ]
+        ],
+        "icon": "./assets/icon"
     },
     rebuildConfig: {},
     makers: [
@@ -23,7 +32,8 @@ module.exports = {
             name: "@electron-forge/maker-squirrel",
             config: {
                 authors: "Renorari",
-                description: "Kanaの音声合成ツール"
+                description: "Kanaの音声合成ツール",
+                loadingGif: "./assets/install.gif",
             },
         },
         {
@@ -32,18 +42,28 @@ module.exports = {
         },
         {
             name: "@electron-forge/maker-deb",
-            config: {},
+            config: {
+                options: {
+                    maintainer: "Renorari",
+                    homepage: "https://kana.renorari.net"
+                }
+            },
         },
         {
             name: "@electron-forge/maker-rpm",
-            config: {}
+            config: {
+                options: {
+                    maintainer: "Renorari",
+                    homepage: "https://kana.renorari.net"
+                }
+            }
         },
         /*{
             name: "@electron-forge/maker-flatpak",
             config: {}
         },
         {
-            name: "@davidwinter/electron-forge-maker-snap",
+            name: "@electron-forge/maker-snap",
             config: {}
         }*/
     ],

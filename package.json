@@ -1,6 +1,6 @@
 {
   "name": "kana-voice-tool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Kanaの音声合成ツール",
   "private": true,
   "main": "index.js",
