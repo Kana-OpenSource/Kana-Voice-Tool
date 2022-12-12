@@ -2,7 +2,6 @@ require("dotenv").config();
 module.exports = {
     packagerConfig: {
         "name": "Kana Voice Tool",
-        "executableName": "KanaVoiceTool",
         "win32metadata": {
             "CompanyName": "Renorari",
             "FileDescription": "Kanaの音声合成ツール",
