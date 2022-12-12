@@ -2,6 +2,7 @@ require("dotenv").config();
 module.exports = {
     packagerConfig: {
         "name": "Kana Voice Tool",
+        "executableName": "kana-voice-tool",
         "win32metadata": {
             "CompanyName": "Renorari",
             "FileDescription": "Kanaの音声合成ツール",
@@ -28,16 +29,16 @@ module.exports = {
     rebuildConfig: {},
     makers: [
         {
+            name: "@electron-forge/maker-zip",
+            platforms: ["darwin", "win32", "linux"],
+        },
+        {
             name: "@electron-forge/maker-squirrel",
             config: {
                 authors: "Renorari",
                 description: "Kanaの音声合成ツール",
                 loadingGif: "./assets/install.gif",
             },
-        },
-        {
-            name: "@electron-forge/maker-zip",
-            platforms: ["darwin", "win32", "linux"],
         },
         {
             name: "@electron-forge/maker-deb",
