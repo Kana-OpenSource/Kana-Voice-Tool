@@ -281,7 +281,8 @@ icon-button:disabled {
 
 #speed,
 #tone,
-#intonation {
+#intonation,
+#between {
     width: 100%;
 }
 

@@ -111,6 +111,7 @@ document.querySelector("#playbutton").addEventListener("click", () => {
                 "speed": (Number(document.querySelector("#speed").value) ? Number(document.querySelector("#speed").value) : 0.01),
                 "tone": Number(document.querySelector("#tone").value),
                 "intonation": Number(document.querySelector("#intonation").value),
+                "between": Number(document.querySelector("#between").value),
                 "user": {
                     "id": document.querySelector("#userid").value,
                     "password": document.querySelector("#password").value
@@ -156,6 +157,7 @@ document.querySelector("#savebutton").addEventListener("click", () => {
                 "speed": (Number(document.querySelector("#speed").value) ? Number(document.querySelector("#speed").value) : 0.01),
                 "tone": Number(document.querySelector("#tone").value),
                 "intonation": Number(document.querySelector("#intonation").value),
+                "between": Number(document.querySelector("#between").value),
                 "user": {
                     "id": document.querySelector("#userid").value,
                     "password": document.querySelector("#password").value
