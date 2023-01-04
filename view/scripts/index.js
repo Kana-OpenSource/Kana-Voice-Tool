@@ -108,9 +108,9 @@ document.querySelector("#playbutton").addEventListener("click", () => {
             body: JSON.stringify({
                 "text": document.querySelector("#text").value ? document.querySelector("#text").value : document.querySelector("#text").attributes.getNamedItem("placeholder").value,
                 "voice_id": document.querySelector("#voiceid").value,
-                "speed": document.querySelector("#speed").value,
-                "tone": document.querySelector("#tone").value,
-                "intonation": document.querySelector("#intonation").value,
+                "speed": (Number(document.querySelector("#speed").value) ? Number(document.querySelector("#speed").value) : 0.01),
+                "tone": Number(document.querySelector("#tone").value),
+                "intonation": Number(document.querySelector("#intonation").value),
                 "user": {
                     "id": document.querySelector("#userid").value,
                     "password": document.querySelector("#password").value
@@ -153,9 +153,9 @@ document.querySelector("#savebutton").addEventListener("click", () => {
             body: JSON.stringify({
                 "text": text,
                 "voice_id": document.querySelector("#voiceid").value,
-                "speed": document.querySelector("#speed").value,
-                "tone": document.querySelector("#tone").value,
-                "intonation": document.querySelector("#intonation").value,
+                "speed": (Number(document.querySelector("#speed").value) ? Number(document.querySelector("#speed").value) : 0.01),
+                "tone": Number(document.querySelector("#tone").value),
+                "intonation": Number(document.querySelector("#intonation").value),
                 "user": {
                     "id": document.querySelector("#userid").value,
                     "password": document.querySelector("#password").value
