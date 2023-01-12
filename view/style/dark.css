@@ -1,11 +1,19 @@
 :root {
     --background: #101010;
     --background: linear-gradient(0deg,
-            hsl(231deg 52% 13%) 0%,
-            hsl(231deg 27% 10%) 50%,
-            hsl(0deg 0% 6%) 100%) fixed;
+            hsl(231deg 50% 16%) 0%,
+            hsl(231deg 27% 8%) 50%,
+            hsl(0deg 0% 8%) 100%) fixed;
     --color: rgb(240, 240, 240);
     --warn-color: rgb(255, 128, 128);
+}
+
+:root {
+    --label-color: rgb(128, 128, 128);
+    --button-background: rgba(255, 255, 255, 0.05);
+    --input-background: rgba(255, 255, 255, 0.05);
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    --border-color: rgba(128, 128, 128, 0.5);
 }
 
 body {
