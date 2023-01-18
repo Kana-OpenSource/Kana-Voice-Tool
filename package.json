@@ -1,7 +1,7 @@
 {
   "name": "kana-voice-tool",
   "version": "1.0.5",
-  "description": "Kanaの音声合成ツール",
+  "description": "れのらりによって作成された、KanaVoiceのデスクトップ向け音声合成ソフトウエア",
   "private": true,
   "main": "index.js",
   "scripts": {
