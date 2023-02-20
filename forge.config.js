@@ -1,17 +1,18 @@
 require("dotenv").config();
 module.exports = {
     packagerConfig: {
-        "name": "Kana Voice Tool",
-        "executableName": "kana-voice-tool",
-        "win32metadata": {
-            "CompanyName": "Renorari",
-            "FileDescription": "Kanaの音声合成ツール",
-            "OriginalFilename": "KanaVoiceTool.exe",
-            "ProductName": "Kana Voice Tool",
-            "InternalName": "KanaVoiceTool"
+        name: "Kana Voice Tool",
+        executableName: "kana-voice-tool",
+        appCopyright: "Renorari",
+        win32metadata: {
+            CompanyName: "Renorari",
+            FileDescription: "Kanaの音声合成ツール",
+            OriginalFilename: "KanaVoiceTool.exe",
+            ProductName: "Kana Voice Tool",
+            InternalName: "KanaVoiceTool"
         },
-        "asar": true,
-        "ignore": [
+        asar: true,
+        ignore: [
             "./src",
             "./node_modules",
             "./.git",
@@ -24,7 +25,7 @@ module.exports = {
             "./.eslintrc.json",
             "./out"
         ],
-        "icon": "./assets/icon"
+        icon: "./assets/icon"
     },
     rebuildConfig: {},
     makers: [
@@ -44,8 +45,11 @@ module.exports = {
             name: "@electron-forge/maker-deb",
             config: {
                 options: {
+                    genericName: "Kana Voice Tool",
+                    description: "Kanaの音声合成ツール",
                     maintainer: "Renorari",
-                    homepage: "https://kana.renorari.net"
+                    homepage: "https://kana.renorari.net",
+                    icon: "./assets/icon.png"
                 }
             },
         },
@@ -53,8 +57,11 @@ module.exports = {
             name: "@electron-forge/maker-rpm",
             config: {
                 options: {
+                    genericName: "Kana Voice Tool",
+                    description: "Kanaの音声合成ツール",
                     maintainer: "Renorari",
-                    homepage: "https://kana.renorari.net"
+                    homepage: "https://kana.renorari.net",
+                    icon: "./assets/icon.png"
                 }
             }
         },

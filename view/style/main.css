@@ -288,7 +288,8 @@ icon-button:disabled {
 #speed,
 #tone,
 #intonation,
-#between {
+#between,
+#volume {
     width: 100%;
 }
 

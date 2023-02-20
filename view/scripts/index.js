@@ -112,6 +112,7 @@ document.querySelector("#playbutton").addEventListener("click", () => {
                 "tone": Number(document.querySelector("#tone").value),
                 "intonation": Number(document.querySelector("#intonation").value),
                 "between": Number(document.querySelector("#between").value),
+                "volume": Number(document.querySelector("#volume").value),
                 "user": {
                     "id": document.querySelector("#userid").value,
                     "password": document.querySelector("#password").value
@@ -158,6 +159,7 @@ document.querySelector("#savebutton").addEventListener("click", () => {
                 "tone": Number(document.querySelector("#tone").value),
                 "intonation": Number(document.querySelector("#intonation").value),
                 "between": Number(document.querySelector("#between").value),
+                "volume": Number(document.querySelector("#volume").value),
                 "user": {
                     "id": document.querySelector("#userid").value,
                     "password": document.querySelector("#password").value
