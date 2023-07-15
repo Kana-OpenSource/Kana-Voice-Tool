@@ -7,7 +7,7 @@ function updateVoiceList() {
                 Object.keys(voices).forEach((key) => {
                     var optionElement = document.createElement("option");
                     optionElement.value = key;
-                    optionElement.innerHTML = voices[key].name;
+                    optionElement.innerHTML = `${voices[key].name_full} (${voices[key].version})`;
                     voiceList.appendChild(optionElement);
                 });
             }).catch((error) => {

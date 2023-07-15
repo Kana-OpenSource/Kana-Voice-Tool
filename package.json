@@ -1,6 +1,6 @@
 {
   "name": "kana-voice-tool",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "れのらりによって作成された、KanaVoiceのデスクトップ向け音声合成ソフトウエア",
   "private": true,
   "main": "index.js",
@@ -20,17 +20,17 @@
   },
   "homepage": "https://github.com/Kana-OpenSource/Kana-Voice-Tool#readme",
   "devDependencies": {
-    "@electron-forge/cli": "^6.0.4",
+    "@electron-forge/cli": "^6.2.1",
     "@electron-forge/maker-deb": "^6.0.4",
-    "@electron-forge/maker-snap": "^6.0.4",
-    "@electron-forge/maker-squirrel": "^6.0.4",
-    "@electron-forge/maker-zip": "^6.0.4",
-    "@electron-forge/publisher-github": "^6.0.4",
-    "@electron-forge/maker-flatpak": "^6.0.4",
+    "@electron-forge/maker-flatpak": "^6.2.1",
     "@electron-forge/maker-rpm": "^6.0.4",
-    "dotenv": "^16.0.3",
-    "electron": "^22.0.0",
-    "eslint": "^8.28.0"
+    "@electron-forge/maker-snap": "^6.2.1",
+    "@electron-forge/maker-squirrel": "^6.2.1",
+    "@electron-forge/maker-zip": "^6.2.1",
+    "@electron-forge/publisher-github": "^6.2.1",
+    "dotenv": "^16.3.1",
+    "electron": "^25.3.0",
+    "eslint": "^8.45.0"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
