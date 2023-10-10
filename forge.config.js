@@ -73,6 +73,13 @@ module.exports = {
             name: "@electron-forge/maker-snap",
             config: {}
         }*/
+        {
+            name: "@electron-forge/maker-dmg",
+            config: {
+                format: "ULFO",
+                "icon": "./assets/icon.icns"
+            }
+        }
     ],
     publishers: [
         {
